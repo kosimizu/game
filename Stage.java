@@ -12,6 +12,10 @@ import java.util.List;
 
 
 public class Stage extends Applet implements MouseListener{
+	Card[] playerField = new Card[5];
+	Card[] npcField = new Card[5];
+	Card[] hands_p1 = new Card[8];
+	Card[] hands_p2 = new Card[8];
 	boolean T = false;
 	Image image;
 	Image image2;
@@ -48,7 +52,7 @@ public class Stage extends Applet implements MouseListener{
 		g.setColor(Color.black);
 		Font fo3 = new Font("SansSerif",Font.BOLD,16);
 		g.setFont(fo3);
-		Card[] playerField = new Card[5];
+		//Card[] playerField = new Card[5];
 		if(T == false){
 			d2 = cd.findCardListData(playerDeck);
 			T = true;
@@ -68,7 +72,7 @@ public class Stage extends Applet implements MouseListener{
 			}
 		}
 		//相手
-		Card[] npcField = new Card[5];
+		//Card[] npcField = new Card[5];
 		if(T == false){
 			d2 = cd.findCardListData(npcDeck);
 			T = true;
@@ -91,7 +95,7 @@ public class Stage extends Applet implements MouseListener{
 		g.setColor(Color.black);
 		Font fohands = new Font("SansSerif",Font.BOLD,12);
 		g.setFont(fohands);
-		Card[] hands_p1 = new Card[8];
+		//Card[] hands_p1 = new Card[8];
 		if(T == false){
 			d2 = cd.findCardListData(playerDeck);
 			T = true;
@@ -111,7 +115,7 @@ public class Stage extends Applet implements MouseListener{
 			}
 		}
 		//相手
-		Card[] hands_p2 = new Card[8];
+		//Card[] hands_p2 = new Card[8];
 		if(T == false){
 			d2 = cd.findCardListData(npcDeck);
 			T = true;
